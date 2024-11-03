@@ -1,0 +1,50 @@
+{
+  "version": 1,
+  "cmakeMinimumRequired": {
+    "major": 3,
+    "minor": 30,
+    "patch": 5
+  },
+  "configurePresets": [
+    {
+      "name": "clang-errors",
+      "displayName": "Debug",
+      "description": "My build options.",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_CXX_FLAGS": "-std=c++17 -g -Weverything"
+      }
+    },
+    {
+      "name": "clang-debug",
+      "displayName": "Debug",
+      "description": "My build options.",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_CXX_FLAGS": "-std=c++17 -g -Wall -Werror"
+      }
+    },
+	  {
+      "name": "clang-release",
+      "displayName": "Release",
+      "description": "CLANG all errors with debug flag.",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_CXX_FLAGS": "-std=c++17 -Wall -Werror"
+       }
+	 },
+      {
+      "name": "gcc-errors",
+      "displayName": "Debug",
+      "description": "GCC all error checking with debug flags.",
+      "generator": "Unix Makefiles",
+      "binaryDir": "${sourceDir}/build",
+      "cacheVariables": {
+        "CMAKE_CXX_FLAGS": "-std=c++17 -g -pedantic -Wall -Wextra -Wcast-align -Wcast-qual -Wctor-dtor-privacy -Wdisabled-optimization -Wformat=2 -Winit-self -Wlogical-op -Wmissing-declarations -Wmissing-include-dirs -Wnoexcept -Wold-style-cast -Woverloaded-virtual -Wredundant-decls -Wshadow -Wsign-conversion -Wsign-promo -Wstrict-null-sentinel -Wstrict-overflow=5 -Wswitch-default -Wundef -Werror -Wno-unused "
+      }
+      }
+  ]
+}

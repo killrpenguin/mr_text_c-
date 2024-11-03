@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/david/Programming/cpp_dev/vulkan_triangle/src",
+  "command": "/usr/lib/llvm/19/bin/clang++  -I/home/david/Programming/cpp_dev/vulkan_triangle/src/../include -isystem /usr/bin/vulkan-sdk-1.3.290.0/include -std=c++17 -o CMakeFiles/my_lib.dir/lib.cpp.o -c /home/david/Programming/cpp_dev/vulkan_triangle/src/lib.cpp",
+  "file": "/home/david/Programming/cpp_dev/vulkan_triangle/src/lib.cpp",
+  "output": "src/CMakeFiles/my_lib.dir/lib.cpp.o"
+},
+{
+  "directory": "/home/david/Programming/cpp_dev/vulkan_triangle/main",
+  "command": "/usr/lib/llvm/19/bin/clang++  -I/home/david/Programming/cpp_dev/vulkan_triangle/src/../include -isystem /usr/bin/vulkan-sdk-1.3.290.0/include -std=c++17 -o CMakeFiles/main.dir/main.cpp.o -c /home/david/Programming/cpp_dev/vulkan_triangle/main/main.cpp",
+  "file": "/home/david/Programming/cpp_dev/vulkan_triangle/main/main.cpp",
+  "output": "main/CMakeFiles/main.dir/main.cpp.o"
+},
+{
+  "directory": "/home/david/Programming/cpp_dev/vulkan_triangle/tests",
+  "command": "/usr/lib/llvm/19/bin/clang++  -I/home/david/Programming/cpp_dev/vulkan_triangle/src/../include -I/home/david/Programming/cpp_dev/vulkan_triangle/_deps/catch-src/single_include -isystem /usr/bin/vulkan-sdk-1.3.290.0/include -std=c++17 -o CMakeFiles/testlib.dir/testlib.cpp.o -c /home/david/Programming/cpp_dev/vulkan_triangle/tests/testlib.cpp",
+  "file": "/home/david/Programming/cpp_dev/vulkan_triangle/tests/testlib.cpp",
+  "output": "tests/CMakeFiles/testlib.dir/testlib.cpp.o"
+}
+]
