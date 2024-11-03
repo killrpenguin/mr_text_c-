@@ -58,7 +58,7 @@ CMAKE_BUILD_TYPE:STRING=
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
 //CXX compiler
-CMAKE_CXX_COMPILER:FILEPATH=/usr/lib/llvm/19/bin/clang++
+CMAKE_CXX_COMPILER:STRING=/usr/lib/llvm/19/bin/clang++
 
 //LLVM archiver
 CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/lib/llvm/19/bin/llvm-ar

@@ -8,6 +8,7 @@ project(
 )
 
 set(CMAKE_CXX_COMPILER "/usr/lib/llvm/19/bin/clang++")
+set(CMAKE_EXE_LINKER_FLAGS "-lglfw -lvulkan -ldl -lpthread -lX11 -lXxf86vm -lXrandr -lXi")
 
 if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 
