@@ -1,11 +1,11 @@
-set(HEADER_LIST "${Vulkan_Triangle_SOURCE_DIR}/include/my_lib/lib.hpp")
+set(HEADER_LIST "${Mr_Text_SOURCE_DIR}/include/mrText/mrText.hpp")
 
-add_library(my_lib lib.cpp ${HEADER_LIST})
+add_library(mrText lib.cpp ${HEADER_LIST})
 
-target_include_directories(my_lib PUBLIC ../include)
+target_include_directories(mrText PUBLIC ../include)
 
-target_link_libraries(my_lib PRIVATE)
+target_link_libraries(mrText PRIVATE)
 
-target_compile_features(my_lib PUBLIC cxx_std_11)
+target_compile_features(mrText PUBLIC cxx_std_11)
 
 

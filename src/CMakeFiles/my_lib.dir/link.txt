@@ -1,2 +1,0 @@
-/usr/lib/llvm/19/bin/llvm-ar qc libmy_lib.a CMakeFiles/my_lib.dir/lib.cpp.o
-/usr/lib/llvm/19/bin/llvm-ranlib libmy_lib.a

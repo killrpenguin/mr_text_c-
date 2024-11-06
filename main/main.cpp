@@ -1,28 +1,22 @@
-#define GLFW_INCLUDE_VULKAN
-#include <GLFW/glfw3.h>
+#include "mrText/mrText.hpp"
 
-#define GLM_FORCE_RADIANS
-#define GLM_FORCE_DEPTH_ZERO_TO_ONE
-#include <glm/mat4x4.hpp>
-#include <glm/vec4.hpp>
-
+#include <exception>
 #include <iostream>
+#include <stdexcept>
 
-int main() {
-  glfwInit();
-  glfwWindowHint(GLFW_CLIENT_API, GLFW_NO_API);
+int main(int argc, char *argv[]) {
 
-  GLFWwindow *window =
-      glfwCreateWindow(800, 600, "Vulkan window", nullptr, nullptr);
-
-  uint32_t extensionCount = 0;
-  vkEnumerateInstanceExtensionProperties(nullptr, &extensionCount, nullptr);
-
-  std::cout << extensionCount << " extensions supported\n";
-
-  glfwDestroyWindow(window);
-
-  glfwTerminate();
-
+  try {
+    if (argc > 1) {
+      mrText editor(argv[1]);
+      editor.run();
+    } else {
+      mrText editor;
+      editor.run();
+    }
+  } catch (const std::exception &err) {
+    std::cerr << err.what() << std::endl;
+    return -1;
+  }
   return 0;
 }

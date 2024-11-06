@@ -1,14 +1,13 @@
 cmake_minimum_required(VERSION 3.18...3.30)
 
 project(
-  Vulkan_Triangle
+  Mr_Text
   VERSION 0.1
   DESCRIPTION "A project following the Vulkan Triangle tutorial."
   LANGUAGES CXX
 )
 
 set(CMAKE_CXX_COMPILER "/usr/lib/llvm/19/bin/clang++")
-set(CMAKE_EXE_LINKER_FLAGS "-lglfw -lvulkan -ldl -lpthread -lX11 -lXxf86vm -lXrandr -lXi")
 
 if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
 
@@ -34,15 +33,11 @@ endif()
 
 include(FetchContent)
 
-find_package(Vulkan REQUIRED)
-find_package(glfw3 3.4 REQUIRED)
-
-
 add_subdirectory(src)
 
 add_subdirectory(main)
 
-target_link_libraries(my_lib glfw Vulkan::Vulkan)
+target_link_libraries(mrText)
 
 if((CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME OR MODERN_CMAKE_BUILD_TESTING)
    AND BUILD_TESTING)

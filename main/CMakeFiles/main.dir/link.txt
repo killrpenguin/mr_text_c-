@@ -1,1 +1,0 @@
-/usr/lib/llvm/19/bin/clang++ -lglfw -lvulkan -ldl -lpthread -lX11 -lXxf86vm -lXrandr -lXi CMakeFiles/main.dir/main.cpp.o -o main  -Wl,-rpath,/usr/bin/vulkan-sdk-1.3.290.0/lib ../src/libmy_lib.a /usr/lib64/libglfw.so.3.4 /usr/bin/vulkan-sdk-1.3.290.0/lib/libvulkan.so
