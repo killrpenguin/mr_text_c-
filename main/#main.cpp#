@@ -6,10 +6,10 @@
 int main(int argc, char *argv[]) {
   try {
     if (argc > 1) {
-      mrText editor(argv[1]);
+      mrText<std::string, std::string_view> editor(argv[1]);
       editor.run();
     } else {
-      mrText editor;
+      mrText<std::string, std::string_view> editor;
       editor.run();
     }
   } catch (const std::exception &err) {
